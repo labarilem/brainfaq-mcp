@@ -12,11 +12,15 @@
   },
   "license": "Attribution-ShareAlike 4.0 International",
   "author": "labarilem",
-  "tags": ["MCP", "brainfuck", "debugger"],
+  "keywords": [
+    "MCP",
+    "brainfuck",
+    "debugger"
+  ],
   "type": "module",
   "main": "index.js",
   "bin": {
-    "brainfaq-mcp": "./index.js"
+    "brainfaq-mcp": "build/index.js"
   },
   "scripts": {
     "build": "tsc && cp ./LICENSE ./README.md ./package.json ./build",
