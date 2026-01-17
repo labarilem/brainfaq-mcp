@@ -10,6 +10,21 @@ Use this command to run the MCP server:
 npx brainfaq-mcp
 ```
 
+To use it in VS Code, add the following JSON snippet to `.vscode/mcp.json` (create the file if you don't have it):
+
+```json
+{
+  "servers": {
+    "brainfaq-mcp": {
+      "command": "npx",
+      "args": ["brainfaq-mcp"]
+    }
+  }
+}
+```
+
+The MCP can be added to other IDEs with LLM agents support (e.g. Cursor) in similar ways. Check their documentation and configure them to run `npx brainfaq-mcp`. It will start the MCP server in stdio mode.
+
 ## Features
 
 ### MCP Tools
