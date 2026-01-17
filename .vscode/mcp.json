@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "brainfaq-mcp": {
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/build/index.js"
+      ]
+    }
+  }
+}

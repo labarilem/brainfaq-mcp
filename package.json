@@ -1,7 +1,7 @@
 {
   "name": "brainfaq-mcp",
   "version": "1.0.0",
-  "description": "MCP server for the BF programming language",
+  "description": "MCP server for the BrainFuck programming language",
   "homepage": "https://github.com/labarilem/brainfaq-mcp#readme",
   "bugs": {
     "url": "https://github.com/labarilem/brainfaq-mcp/issues"
@@ -10,14 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/labarilem/brainfaq-mcp.git"
   },
-  "license": "MIT",
+  "license": "Attribution-ShareAlike 4.0 International",
   "author": "labarilem",
+  "tags": [],
   "type": "module",
+  "main": "index.js",
   "bin": {
-    "brainfaq-mcp": "./build/index.js"
+    "brainfaq-mcp": "./index.js"
   },
   "scripts": {
-    "build": "tsc && chmod 755 build/index.js"
+    "build": "tsc && cp ./LICENSE ./README.md ./package.json ./build",
+    "test": "node --import tsx --test tests/**/*.test.ts"
   },
   "files": [
     "build"
@@ -28,6 +31,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.0.8",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "tsx": "^4.7.3"
   }
 }
