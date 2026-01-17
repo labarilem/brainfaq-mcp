@@ -1,13 +1,13 @@
 # brainfaq-mcp
 
-MCP server for the [Brainfuck](https://esolangs.org/wiki/Brainfuck) programming language.
+MCP server for the [Brainfuck](https://esolangs.org/wiki/Brainfuck) programming language that allows your favourite LLM to debug Brainfuck programs.
 
 ## Usage
 
 Use this command to run the MCP server:
 
 ```
-npx -y brainfaq-mcp
+npx brainfaq-mcp
 ```
 
 ## Features
