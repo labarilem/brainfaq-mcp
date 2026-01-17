@@ -1,6 +1,6 @@
 {
   "name": "brainfaq-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for the BrainFuck programming language",
   "homepage": "https://github.com/labarilem/brainfaq-mcp#readme",
   "bugs": {
@@ -17,6 +17,7 @@
     "brainfuck",
     "debugger"
   ],
+  "mcpName": "io.github.labarilem/brainfaq-mcp",
   "type": "module",
   "main": "index.js",
   "bin": {
